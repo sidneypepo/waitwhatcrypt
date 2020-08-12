@@ -31,7 +31,7 @@ chmod +x waitwhatcrypt.sh
 ────────────────────────── 「C0d3d by sysb1n 」────────/____/_/──────────
 ```
 
-* Basic usage: `./script.sh [OPTION] "your text"`
+* Basic usage: `./waitwhatcrypt.sh [OPTION] "your text"`
 
 * Options:
     > -h -> Use the flag '-h' to show this help menu. You can also use flags 'h', '--help', 'help' or just nothing to see this menu.  
@@ -46,7 +46,7 @@ chmod +x waitwhatcrypt.sh
     * [Encrypt] #1  
         > Input:  
         ```bash
-        ./cript.sh -e "f... society"  
+        ./waitwhatcrypt.sh -e "f... society"  
         ```
         
         > Output:  
@@ -58,7 +58,7 @@ chmod +x waitwhatcrypt.sh
     * [Encrypt] #2  
         > Input:  
         ```bash
-        ./cript.sh -e "for a in \$(seq \$((2+3+\$RANDOM%15))); do echo \$a | tr \"\\\n\" \" \"; done; echo \"\";"  
+        ./waitwhatcrypt.sh -e "for a in \$(seq \$((2+3+\$RANDOM%15))); do echo \$a | tr \"\\\n\" \" \"; done; echo \"\";"  
         ```
             
         > Output:  
