@@ -10,10 +10,14 @@ This release (BETA v0.5), **DOESN'T** has the decrypt function. It will be added
 To run it, first you must give it permissions.
 
 * To give permissions, open a terminal in the file folder and type:
-> chmod +x waitwhatcrypt.sh
+```bash 
+chmod +x waitwhatcrypt.sh
+```
 
 * After gave execute permission, you can run it typing:
-> ./waitwhatcrypt.sh
+```bash
+./waitwhatcrypt.sh
+```
 
 ---
 
