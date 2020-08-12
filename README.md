@@ -58,7 +58,7 @@ To run it, first you must give it permissions.
         ```
             
         > Output:  
-        ```
+        ```bash
         Original text: ' for a in $(seq $((2+3+$RANDOM%15))); do echo $a | tr "\n" " "; done; echo ""; '  
         Encrypted string: ' 25p14n33i\68c\75x36s\$(84d160s90p\$((20m+33i+$RANDOM%12y65o)));\252d105u\320v85m162y133r\$340k\|\546j242v\"\138t"\"\";\432h175c156g540h;\560x145o270d217j\"";] '  
         ```
