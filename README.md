@@ -1,4 +1,4 @@
-# waitwhatcrypt
+# WaitWhatCrypt v0.5
 WaitWhatCrypt, for while, is just a test text crypter, coded in Shell Script.
 
 # **IMPORTANT:**
