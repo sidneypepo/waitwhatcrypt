@@ -50,13 +50,13 @@ then
 elif [ "$1" == "-e" -o "$1" == "e" -o "$1" == "--encrypt" -o "$1" == "encrypt" ]
 then
 
-	bash encrypt.sh "$inp"
+	bash wwc-core/encrypt.sh "$inp"
 
 #Decrypting a string:
 elif [ "$1" == "-d" -o "$1" == "d" -o "$1" == "--decrypt" -o "$1" == "decrypt" ]
 then
 
-	bash decrypt.sh "$inp"
+	bash wwc-core/decrypt.sh "$inp"
 
 #Error filter:
 else
