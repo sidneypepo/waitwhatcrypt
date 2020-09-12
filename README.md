@@ -2,20 +2,47 @@
 WaitWhatCrypt, for while, is just a test text crypter, coded in Shell Script.
 
 ## Change Log:
-* **Decrypt function added**
-* Encrypt and decrypt functions now are separated modules from WWC kernel, located in `.wwc-core` folder
+* **Decrypt function added;**
+* Encrypt and decrypt functions now are separated modules from WWC kernel, located in `.wwc-core` folder;
+* README.md updated;
 
 ---
 
-## First execution:
-To run it, first you must give it permissions.
+## Downloading:
+To download this repo, you must have Git installed. If you don't have it,
+> and you use an Arch-based distro, install Git typing:
+```bash
+sudo pacman -S git
+```
 
-* To give permissions, open a terminal in the file folder and type:
+> and you use a Debian-based distro, install Git typing:
+```bash
+sudo apt-get install git -y
+```
+
+> and you use a Red Hat-based distro, install Git typing:
+```bash
+sudo yum install git -y
+```
+
+
+> and you use a Termux, install Git typing:
+```bash
+pkg install git -y
+```
+
+If you already have Git, you can download this repo typing:
+```bash
+git clone https://github.com/sidneypepo/waitwhatcrypt
+```
+
+## First execution:
+To run it, first you must give it execute permission. To give this permission, go to repo folder and type:
 ```bash 
 chmod +x waitwhatcrypt.sh
 ```
 
-* After gave execute permission, you can run it typing:
+After gave execute permission, you can run it typing:
 ```bash
 ./waitwhatcrypt.sh
 ```
@@ -39,8 +66,8 @@ chmod +x waitwhatcrypt.sh
     > -e -> Use the flag '-e' to encrypt your text. You can also use flags 'e', '--encrypt' or 'encrypt' to use the encrypt function.  
     > -d -> Use the flag '-d' to decrypt your text. You can also use flags 'd', '--decrypt' or 'decrypt' to use the decrypt function.  
 
-* **INFO 1:** Blank spaces are represented by a backslash (`\`) and final return key are represented by a square bracket (`]`), so be careful at using backslashes and square brackets in your text!
-* **·INFO 1.1:** Decrypt function is almost perfect, but, at least for now, it destroy any backslash (`\`), square bracket (`]`) or numbers in your text, so be careful at using backslashes, square brackets and numbers in your text! (See Decrypt example 2 to a better understanding).
+* **INFO 1:** Blank spaces are represented by a backslash (`\`) and final return key are represented by a square bracket (`]`), so be careful at using them in your text!
+* **·INFO 1.1:** Decrypt function is almost perfect, but, at least for now, it destroy any backslash (`\`), square bracket (`]`) or numbers in your text, so be careful at using them in your text! (See Decrypt example 2 to a better understanding).
 * **INFO 2:** To use special characters/commands in your text, like `\`, `$`, `"` or `\n`, you must add `\` (backslash(es)) BEFORE it! (See Encrypt example 2 to a better understanding).
 * **INFO 3:** At least for while, this script CAN NOT encrypt capital letters!
 
