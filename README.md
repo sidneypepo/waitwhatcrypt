@@ -39,7 +39,7 @@ chmod +x waitwhatcrypt.sh
     > -e -> Use the flag '-e' to encrypt your text. You can also use flags 'e', '--encrypt' or 'encrypt' to use the encrypt function.  
     > -d -> Use the flag '-d' to decrypt your text. You can also use flags 'd', '--decrypt' or 'decrypt' to use the decrypt function.  
 
-* **INFO 1:** Blank spaces are represented by a backslash (`\`) and final return key are represented by a square bracket (`]`), so be careful at using backslashes and square brackets in your text!
+* **INFO 1:** Blank spaces are represented by a backslash (`\`) and final return key are represented by a square bracket (`]`), so be careful at using them in your text!
 * **·INFO 1.1:** Decrypt function is almost perfect, but, at least for now, it destroy any backslash (`\`), square bracket (`]`) or numbers in your text, so be careful at using backslashes, square brackets and numbers in your text! (See Decrypt example 2 to a better understanding).
 * **INFO 2:** To use special characters/commands in your text, like `\`, `$`, `"` or `\n`, you must add `\` (backslash(es)) BEFORE it! (See Encrypt example 2 to a better understanding).
 * **INFO 3:** At least for while, this script CAN NOT encrypt capital letters!
