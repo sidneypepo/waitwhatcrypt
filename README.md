@@ -36,6 +36,8 @@ If you already have Git, you can download this repo typing:
 git clone https://github.com/sidneypepo/waitwhatcrypt
 ```
 
+---
+
 ## First execution:
 To run it, first you must give it execute permission. To give this permission, go to repo folder and type:
 ```bash 
@@ -71,51 +73,53 @@ After gave execute permission, you can run it typing:
 * **INFO 2:** To use special characters/commands in your text, like `\`, `$`, `"` or `\n`, you must add `\` (backslash(es)) BEFORE it! (See Encrypt example 2 to a better understanding).
 * **INFO 3:** At least for while, this script CAN NOT encrypt capital letters!
 
-* Usage examples:
-    * [Encrypt] #1
-        > Input:
-        ```bash
-        ./waitwhatcrypt.sh -e "f... society"
-        ```
+---
+
+## Usage examples:
+* [Encrypt] #1
+    > Input:
+    ```bash
+    ./waitwhatcrypt.sh -e "f... society"
+    ```
         
-        > Output:
-        ```bash
-        Original text: ' f... society '
-        Encrypted string: ' 25h...\24y21d20a75g120s182p112r] '
-        ```  
+    > Output:
+    ```bash
+    Original text: ' f... society '
+    Encrypted string: ' 25h...\24y21d20a75g120s182p112r] '
+    ```  
 
-    * [Decrypt] #1
-        > Input:
-        ```bash
-        ./waitwhatcrypt.sh -d "25h...\\24y21d20a75g120s182p112r]"
-        ```
+* [Decrypt] #1
+    > Input:
+    ```bash
+    ./waitwhatcrypt.sh -d "25h...\\24y21d20a75g120s182p112r]"
+    ```
         
-        > Output:
-        ```bash
-        Original string: ' 25h...\24y21d20a75g120s182p112r] '
-        Decrypted text: ' f... society '
-        ```
+    > Output:
+    ```bash
+    Original string: ' 25h...\24y21d20a75g120s182p112r] '
+    Decrypted text: ' f... society '
+    ```
 
-    * [Encrypt] #2
-        > Input:
-        ```bash
-        ./waitwhatcrypt.sh -e "for a in \$(seq \$((2+3+\$RANDOM%15))); do echo \$a | tr \"\\\n\" \" \"; done; echo \"\";"
-        ```
+* [Encrypt] #2
+    > Input:
+    ```bash
+    ./waitwhatcrypt.sh -e "for a in \$(seq \$((2+3+\$RANDOM%15))); do echo \$a | tr \"\\\n\" \" \"; done; echo \"\";"
+    ```
             
-        > Output:
-        ```bash
-        Original text: ' for a in $(seq $((2+3+$RANDOM%15))); do echo $a | tr "\n" " "; done; echo ""; '
-        Encrypted string: ' 25p14n33i\68c\75x36s\$(84d160s90p\$((20m+33i+$RANDOM%12y65o)));\252d105u\320v85m162y133r\$340k\|\546j242v\"\138t"\"\";\432h175c156g540h;\560x145o270d217j\"";] '
-        ```
+    > Output:
+    ```bash
+    Original text: ' for a in $(seq $((2+3+$RANDOM%15))); do echo $a | tr "\n" " "; done; echo ""; '
+    Encrypted string: ' 25p14n33i\68c\75x36s\$(84d160s90p\$((20m+33i+$RANDOM%12y65o)));\252d105u\320v85m162y133r\$340k\|\546j242v\"\138t"\"\";\432h175c156g540h;\560x145o270d217j\"";] '
+    ```
 
-    * [Decrypt] #2
-        > Input:
-        ```bash
-        ./waitwhatcrypt.sh -d "25e14d33s\\68u\\75l36p\\\\\$(84k160b90s\\\\\$((20s+33v+\$RANDOM%12y65h)));\\252m105k\\320e85d162j133c\\\\\$340m\\|\\546s242o\\\"\\\138l\"\\\"\\\";\\432r175o156m540r;\\560o145g270z217p\\\"\";]"
-        ```
+* [Decrypt] #2
+    > Input:
+    ```bash
+    ./waitwhatcrypt.sh -d "25e14d33s\\68u\\75l36p\\\\\$(84k160b90s\\\\\$((20s+33v+\$RANDOM%12y65h)));\\252m105k\\320e85d162j133c\\\\\$340m\\|\\546s242o\\\"\\\138l\"\\\"\\\";\\432r175o156m540r;\\560o145g270z217p\\\"\";]"
+    ```
             
-        > Output:
-        ```bash
-        Original string: ' 25p14n33i\68c\75x36s\$(84d160s90p\$((20m+33i+$RANDOM%12y65o)));\252d105u\320v85m162y133r\$340k\|\546j242v\"\138t"\"\";\432h175c156g540h;\560x145o270d217j\"";] '
-        Decrypted text: ' for a in  $(seq  $((x+v+$RANDOM%kc))); do echo  $a | tr "  n" " "; done; echo ""; '
-        ```
+    > Output:
+    ```bash
+    Original string: ' 25p14n33i\68c\75x36s\$(84d160s90p\$((20m+33i+$RANDOM%12y65o)));\252d105u\320v85m162y133r\$340k\|\546j242v\"\138t"\"\";\432h175c156g540h;\560x145o270d217j\"";] '
+    Decrypted text: ' for a in  $(seq  $((x+v+$RANDOM%kc))); do echo  $a | tr "  n" " "; done; echo ""; '
+    ```
