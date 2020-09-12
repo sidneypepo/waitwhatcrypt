@@ -66,5 +66,5 @@ do
 done)"
 
 #Printing final encrypted string:
-echo -e "·Encrypted string: ' $el5 '\n"
+echo -e "·Encrypted string: ' $el6 '\n"
 exit
