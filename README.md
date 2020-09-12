@@ -2,9 +2,9 @@
 WaitWhatCrypt, for while, is just a test text crypter, coded in Shell Script.
 
 ## Change Log:
-* **Decrypt function added**
-* Encrypt and decrypt functions now are separated modules from WWC kernel, located in `.wwc-core` folder
-* README.md updated
+* **Decrypt function added;**
+* Encrypt and decrypt functions now are separated modules from WWC kernel, located in `.wwc-core` folder;
+* README.md updated;
 
 ---
 
