@@ -35,9 +35,9 @@ chmod +x waitwhatcrypt.sh
 * Basic usage: `./waitwhatcrypt.sh [OPTION] "your text"`
 
 * Options:
-    > -h -> Use the flag '-h' to show this help menu. You can also use flags 'h', '--help', 'help' or just nothing to see this menu.
-    > -e -> Use the flag '-e' to encrypt your text. You can also use flags 'e', '--encrypt' or 'encrypt' to use the encrypt function.
-    > -d -> Use the flag '-d' to decrypt your text. You can also use flags 'd', '--decrypt' or 'decrypt' to use the decrypt function.
+    > -h -> Use the flag '-h' to show this help menu. You can also use flags 'h', '--help', 'help' or just nothing to see this menu.  
+    > -e -> Use the flag '-e' to encrypt your text. You can also use flags 'e', '--encrypt' or 'encrypt' to use the encrypt function.  
+    > -d -> Use the flag '-d' to decrypt your text. You can also use flags 'd', '--decrypt' or 'decrypt' to use the decrypt function.  
 
 * **INFO 1:** Blank spaces are represented by a backslash (`\`) and final return key are represented by a square bracket (`]`), so be careful at using backslashes and square brackets in your text!
 * **·INFO 1.1:** Decrypt function is almost perfect, but, at least for now, it destroy any backslash (`\`), square bracket (`]`) or numbers in your text, so be careful at using backslashes, square brackets and numbers in your text! (See Decrypt example 2 to a better understanding).
