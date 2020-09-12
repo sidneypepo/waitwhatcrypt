@@ -21,8 +21,9 @@ echo -e "───────────────────────�
 inp=$2
 
 #Main menu function:
-menu() 
+menu()
 {
+
 	echo -e "·Basic usage: ./waitwhatcrypt.sh [OPTION] \"your text\""
 
 	echo -e "\n·Options:"
@@ -36,7 +37,10 @@ menu()
 
 	echo -e "\n·Usage examples:"
 	echo -e "    [Encrypt] #1\n    |   Input: \n    |   |   ./waitwhatcrypt.sh -e \"f... society\" \n    |   Output:\n    |   |   Original text: ' f... society '\n    |   |   Encrypted string: ' 25h...\24y21d20a75g120s182p112r] '\n    |   |"
-	echo -e "    [Encrypt] #2\n    |   Input: \n    |   |   ./waitwhatcrypt.sh -e \"for a in \\\$(seq \\\$((2+3+\\\$RANDOM%15))); do echo \\\$a | tr \\\"\\\\\\\\\\\n\\\" \\\" \\\"; done; echo \\\"\\\";\" \n    |   Output:\n    |   |   Original text: ' for a in \$(seq \$((2+3+\$RANDOM%15))); do echo \$a | tr \"\\\n\" \" \"; done; echo \"\"; '\n    |   |   Encrypted string: ' 25p14n33i\\68c\\75x36s\\\$(84d160s90p\\\$((20m+33i+\$RANDOM%12y65o)));\\252d105u\\320v85m162y133r\\\\\$340k\\|\\546j242v\\\\\"\\138t\"\\\\\"\\\\\";\\432h175c156g540h;\\560x145o270d217j\\\"\";] '\n" 
+	echo -e "    [Encrypt] #2\n    |   Input: \n    |   |   ./waitwhatcrypt.sh -e \"for a in \\\$(seq \\\$((2+3+\\\$RANDOM%15))); do echo \\\$a | tr \\\"\\\\\\\\\\\n\\\" \\\" \\\"; done; echo \\\"\\\";\" \n    |   Output:\n    |   |   Original text: ' for a in \$(seq \$((2+3+\$RANDOM%15))); do echo \$a | tr \"\\\n\" \" \"; done; echo \"\"; '\n    |   |   Encrypted string: ' 25p14n33i\\68c\\75x36s\\\$(84d160s90p\\\$((20m+33i+\$RANDOM%12y65o)));\\252d105u\\320v85m162y133r\\\\\$340k\\|\\546j242v\\\\\"\\138t\"\\\\\"\\\\\";\\432h175c156g540h;\\560x145o270d217j\\\"\";] '\n    |   |   "
+	echo -e "    [Decrypt] #1\n    |   Input: \n    |   |   ./waitwhatcrypt.sh -d \"25h...\\\\\24y21d20a75g120s182p112r]\" \n    |   Output:\n    |   |   Original string: ' 25h...\\24y21d20a75g120s182p112r] '\n    |   |   Decrypted text: ' f... society '\n    |   |"
+	echo -e "    [Decrypt] #2\n    |   Input: \n    |   |   ./waitwhatcrypt.sh -d \"25p14n33i\\68c\\75x36s\\\$(84d160s90p\\\$((20m+33i+\$RANDOM%12y65o)));\\252d105u\\320v85m162y133r\\\\\$340k\\|\\546j242v\\\\\"\\138t\"\\\\\"\\\\\";\\432h175c156g540h;\\560x145o270d217j\\\"\";]\" \n    |   Output:\n    |   |   Original string: ' 25p14n33i\\68c\\75x36s\\\$(84d160s90p\\\$((20m+33i+\$RANDOM%12y65o)));\\252d105u\\320v85m162y133r\\\\\$340k\\|\\546j242v\\\\\"\\138t\"\\\\\"\\\\\";\\432h175c156g540h;\\560x145o270d217j\\\"\";] '\n    |   |   Decrypted text: ' for a in \$(seq \$((2+3+\$RANDOM%15))); do echo \$a | tr \"\\\n\" \" \"; done; echo \"\"; '\n"
+
 }
 
 #Executing menu function:
